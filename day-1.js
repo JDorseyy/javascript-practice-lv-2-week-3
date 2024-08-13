@@ -18,7 +18,14 @@ console.log(book.pages);  // Output: 281
 // Create an object named `movie` with the following properties:
 // `title` (string), `director` (string), `year` (number)
 // Log each property using dot notation.
-
+let movie = {
+  title: "Why did I get married",
+  director: "Tyler Perry",
+  year: 2007
+};
+console.log(movie.title);
+console.log(movie.director);
+console.log(movie.year);
 
 // Example 2: Creating a Pet Object
 const pet = {
@@ -36,7 +43,15 @@ console.log(pet.age);     // Output: 5
 // Create an object named `city` with the following properties:
 // `name` (string), `population` (number), `country` (string)
 // Log each property using dot notation.
+ let city = {
+  Name: "New Oleans",
+  population: "390,144",
+  country: "Usa"
+}
 
+console.log(city.Name);
+console.log(city.population);
+console.log(city.country);
 
 // Example 3: Creating a Car Object
 const car = {
@@ -54,7 +69,15 @@ console.log(car.year);   // Output: 2021
 // Create an object named `computer` with the following properties:
 // `brand` (string), `processor` (string), `ram` (number)
 // Log each property using dot notation.
+let computer = {
+  brand: "Apple",
+  processor: "M2 chip",
+  ram: "16GB"
+}
+console.log(computer.brand);
 
+console.log(computer.processor);
+console.log(computer.ram);
 
 // Example 4: Creating a Product Object
 const product = {
@@ -72,7 +95,15 @@ console.log(product.inStock); // Output: true
 // Create an object named `restaurant` with the following properties:
 // `name` (string), `type` (string), `rating` (number)
 // Log each property using dot notation.
+ let restaurant = {
+  Name1: "Ruths Chris",
+  type: "steak house",
+  rating: "4.5"
+ }
 
+ console.log(restaurant.Name1);
+ console.log(restaurant.type);
+ console.log(restaurant.rating);
 
 // Example 5: Creating a Student Object
 const student = {
@@ -90,4 +121,12 @@ console.log(student.grade);     // Output: A
 // Create an object named `house` with the following properties:
 // `address` (string), `size` (number), `hasGarage` (boolean)
 // Log each property using dot notation.
+ let house = {
+  address: "201 Northline St",
+  size: "15,230",
+  hasGarage: true,
+ }
 
+ console.log(house.address);
+ console.log(house.size);
+ console.log(house.hasGarage);

@@ -33,6 +33,16 @@ console.log("\nExample 2: Factory Function with Default Properties");
 const defaultCar = createCar();
 console.log(defaultCar); // Output: { brand: 'Toyota', model: 'Corolla', year: 2010 }
 
+function createCity(){
+  return {
+    name: 'New Orleans',
+    population: 390000,
+    country: 'USA'
+  }
+}
+
+let city1 = createCity();
+console.log(city1);
 // TODO 2: Create a factory function named `createCity`
 // This function should return an object with default properties:
 // - name: 'Springfield'
@@ -53,6 +63,15 @@ console.log("\nExample 3: Factory Function with Arguments");
 const specificBook = createBookWithDetails('1984', 'George Orwell', 328);
 console.log(specificBook); // Output: { title: '1984', author: 'George Orwell', pages: 328 }
 
+function createPetWithDetails(name, species, age) {
+  return {
+    name: name,
+    species: species,
+    aga: age
+  }
+}
+let mypet1 = createPetWithDetails("Blue", "Snake", 100)
+console.log(mypet1);
 // TODO 3: Create a factory function named `createPetWithDetails`
 // This function should accept three arguments to set the properties:
 // - name
@@ -73,6 +92,15 @@ console.log("\nExample 4: Factory Function with Arguments");
 const specificCar = createCarWithDetails('Tesla', 'Model S', 2021);
 console.log(specificCar); // Output: { brand: 'Tesla', model: 'Model S', year: 2021 }
 
+function createCityWithDetails(name, population, country) {
+  return {
+    name: name,
+    population: population,
+    country: country
+  };
+}
+specificCityDetails = createCityWithDetails('Chicago', 2746388, 'USA')
+console.log(specificCityDetails);
 // TODO 4: Create a factory function named `createCityWithDetails`
 // This function should accept three arguments to set the properties:
 // - name
@@ -96,6 +124,21 @@ function createPetWithMethod(name, species, age) {
 console.log("\nExample 5: Factory Function with Method");
 const myPet = createPetWithMethod('Bella', 'Dog', 4);
 myPet.celebrateBirthday(); // Output: Happy Birthday Bella! You are now 5 years old.
+
+function createCityWithMethod(name, population, country) {
+  return {
+    name: 'Chicago',
+    population: 1700000,
+    country: 'USA',
+    changePopulation() {
+      this.population += 1000000;
+      console.log(`People coming into ${this.name} will be ${this.population}!`);
+    }
+  };
+}
+
+myCity = createCityWithMethod('Chicago', 1700000, 'USA');
+myCity.changePopulation();
 
 // TODO 5: Create a factory function named `createCityWithMethod`
 // This function should accept three arguments to set the properties:
